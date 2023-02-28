@@ -1,0 +1,233 @@
+Worker id:   5 Job_id:   9 https://superbet.ro           |   0.14s | Get "https://superbet.ro": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not superbet.ro
+Worker id:   8 Job_id:   5 http://fanatik.ro             |   0.17s | 403
+Worker id:   7 Job_id:   8 http://championat.com         |   0.37s | 200
+Worker id:   5 Job_id:  10 http://filmeserialeonline.org |   0.35s | 200
+Worker id:  10 Job_id:   0 http://t.me                   |   0.52s | 200
+Worker id:   2 Job_id:   3 http://twitter.com            |   0.54s | 200
+Worker id:  10 Job_id:  14 http://ria.ru                 |   0.11s | 403
+Worker id:   7 Job_id:  12 http://championat.com         |   0.31s | 200
+Worker id:   3 Job_id:   4 http://music.yandex.ru        |   0.71s | 200
+Worker id:   1 Job_id:   2 http://gsp.ro                 |   0.78s | 200
+Worker id:   5 Job_id:  13 https://cloud.mail.ru         |   0.31s | 200
+Worker id:   5 Job_id:  20 https://dexonline.ro          |   0.08s | 200
+Worker id:   1 Job_id:  19 https://altex.ro              |   0.11s | 403
+Worker id:  10 Job_id:  16 https://instagram.com         |   0.30s | 200
+Worker id:   9 Job_id:   7 http://olx.ro                 |   0.95s | 200
+Worker id:   3 Job_id:  18 http://drmax.ro               |   0.26s | 200
+Worker id:   1 Job_id:  22 https://cloud.mail.ru         |   0.19s | 200
+Worker id:   8 Job_id:  11 https://netflix.com           |   0.98s | 200
+Worker id:   7 Job_id:  17 https://sport.ro              |   0.49s | 200
+Worker id:   4 Job_id:   1 http://kp.ru                  |   1.34s | Get "https://www.kp.ru/": stopped after 10 redirects
+Worker id:  10 Job_id:  23 https://digisport.ro          |   0.41s | 200
+Worker id:   6 Job_id:   6 http://kp.ru                  |   1.36s | Get "https://www.kp.ru/": stopped after 10 redirects
+Worker id:   5 Job_id:  21 https://whatsapp.com          |   0.54s | 200
+Worker id:   4 Job_id:  29 https://digisport.ro          |   0.08s | 200
+Worker id:   9 Job_id:  24 http://prosport.ro            |   0.50s | 200
+Worker id:   4 Job_id:  33 https://twitter.com           |   0.20s | 200
+Worker id:  10 Job_id:  30 http://google.ru              |   0.35s | 200
+Worker id:   7 Job_id:  28 https://cancan.ro             |   0.55s | 200
+Worker id:   1 Job_id:  26 http://pinterest.com          |   0.67s | 200
+Worker id:   4 Job_id:  35 http://prosport.ro            |   0.14s | 200
+Worker id:   5 Job_id:  32 https://dzen.ru               |   0.38s | 200
+Worker id:  10 Job_id:  36 https://sberbank.ru           |   0.10s | Get "https://sberbank.ru": x509: certificate signed by unknown authority
+Worker id:   6 Job_id:  31 https://google.ru             |   0.47s | 200
+Worker id:  10 Job_id:  41 https://playtech.ro           |   0.09s | 200
+Worker id:   9 Job_id:  34 https://rbc.ru                |   0.49s | 200
+Worker id:   8 Job_id:  27 https://yahoo.com             |   0.93s | 200
+Worker id:  10 Job_id:  43 https://sport.ro              |   0.21s | 200
+Worker id:   7 Job_id:  37 http://farmaciatei.ro         |   0.40s | 200
+Worker id:   5 Job_id:  40 http://dns-shop.ru            |   0.39s | 200
+Worker id:   9 Job_id:  44 https://flashscore.ro         |   0.29s | 200
+Worker id:  10 Job_id:  46 http://cancan.ro              |   0.24s | 200
+Worker id:   6 Job_id:  42 http://yandex.ru              |   0.53s | 200
+Worker id:   4 Job_id:  39 http://ya.ru                  |   0.63s | 200
+Worker id:   7 Job_id:  47 https://dzen.ru               |   0.31s | 200
+Worker id:   9 Job_id:  49 https://ya.ru                 |   0.24s | 200
+Worker id:   9 Job_id:  54 http://superbet.ro            |   0.05s | Get "https://superbet.ro/": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not superbet.ro
+Worker id:   5 Job_id:  48 http://vodafone.com           |   0.55s | 200
+Worker id:   7 Job_id:  53 http://rbc.ru                 |   0.31s | 200
+Worker id:  10 Job_id:  50 https://music.yandex.ru       |   0.44s | 200
+Worker id:   6 Job_id:  51 http://twitch.tv              |   0.43s | 200
+Worker id:   1 Job_id:  38 https://aliexpress.ru         |   1.05s | 429
+Worker id:   3 Job_id:  25 http://adevarul.ro            |   1.89s | 200
+Worker id:   8 Job_id:  45 http://adevarul.ro            |   0.78s | 200
+Worker id:   7 Job_id:  57 http://orange.ro              |   0.15s | 200
+Worker id:   1 Job_id:  60 https://flashscore.ro         |   0.10s | 200
+Worker id:  10 Job_id:  58 https://cancan.ro             |   0.18s | 200
+Worker id:   3 Job_id:  61 https://flashscore.ro         |   0.10s | 200
+Worker id:   5 Job_id:  56 https://wildberries.ru        |   0.29s | 200
+Worker id:   5 Job_id:  67 https://dexonline.ro          |   0.03s | 200
+Worker id:   3 Job_id:  66 https://google.ru             |   0.18s | 200
+Worker id:   8 Job_id:  62 https://pikabu.ru             |   0.38s | 200
+Worker id:   4 Job_id:  52 http://kp.ru                  |   0.89s | Get "https://www.kp.ru/": stopped after 10 redirects
+Worker id:   1 Job_id:  64 https://yahoo.com             |   0.40s | 200
+Worker id:   9 Job_id:  55 https://kp.ru                 |   0.82s | Get "http://www.kp.ru/": stopped after 10 redirects
+Worker id:   4 Job_id:  71 http://g4media.ro             |   0.12s | 403
+Worker id:   8 Job_id:  70 https://libertatea.ro         |   0.18s | 200
+Worker id:   5 Job_id:  68 https://youtube.com           |   0.44s | 200
+Worker id:   9 Job_id:  73 http://telegram.org           |   0.18s | 200
+Worker id:   1 Job_id:  72 http://ziare.com              |   0.21s | 200
+Worker id:   6 Job_id:  59 https://drom.ru               |   0.85s | 200
+Worker id:   5 Job_id:  76 https://gsp.ro                |   0.17s | 200
+Worker id:  10 Job_id:  65 http://dcnews.ro              |   0.71s | 200
+Worker id:   3 Job_id:  69 http://market.yandex.ru       |   0.53s | 200
+Worker id:   4 Job_id:  74 http://fandom.com             |   0.28s | 200
+Worker id:   6 Job_id:  79 http://g4media.ro             |   0.09s | 403
+Worker id:   5 Job_id:  80 http://wildberries.ru         |   0.15s | 200
+Worker id:  10 Job_id:  81 http://telegram.org           |   0.15s | 200
+Worker id:   1 Job_id:  78 http://drive2.ru              |   0.36s | 403
+Worker id:   3 Job_id:  82 https://antena3.ro            |   0.25s | 200
+Worker id:   6 Job_id:  84 https://cloud.mail.ru         |   0.20s | 200
+Worker id:  10 Job_id:  86 http://orange.ro              |   0.15s | 200
+Worker id:   9 Job_id:  77 https://music.yandex.ru       |   0.44s | 200
+Worker id:   8 Job_id:  75 http://music.yandex.ru        |   0.53s | 200
+Worker id:   3 Job_id:  88 https://vodafone.com          |   0.10s | 200
+Worker id:   4 Job_id:  83 http://smi2.ru                |   0.41s | 200
+Worker id:   9 Job_id:  91 http://ozon.ru                |   0.18s | 403
+Worker id:   1 Job_id:  87 https://facebook.com          |   0.35s | 200
+Worker id:   5 Job_id:  85 https://google.ro             |   0.43s | 200
+Worker id:   6 Job_id:  89 https://aliexpress.ru         |   0.31s | 429
+Worker id:   8 Job_id:  92 http://dcnews.ro              |   0.30s | 200
+Worker id:   9 Job_id:  95 https://pikabu.ru             |   0.26s | 200
+Worker id:   1 Job_id:  96 http://aliexpress.ru          |   0.22s | 429
+Worker id:   6 Job_id:  98 https://ok.ru                 |   0.23s | 200
+Worker id:   3 Job_id:  93 https://wikipedia.org         |   0.47s | 200
+Worker id:   5 Job_id:  97 https://emag.ro               |   0.30s | 511
+Worker id:   9 Job_id: 100 http://sport.ro               |   0.28s | 200
+Worker id:   6 Job_id: 102 https://facebook.com          |   0.20s | 200
+Worker id:   4 Job_id:  94 http://pikabu.ru              |   0.61s | 200
+Worker id:   9 Job_id: 105 https://gdz.ru                |   0.06s | 403
+Worker id:   3 Job_id: 103 http://stirileprotv.ro        |   0.33s | 200
+Worker id:   6 Job_id: 106 https://wikipedia.org         |   0.15s | 200
+Worker id:   4 Job_id: 107 https://weather.com           |   0.28s | 200
+Worker id:   9 Job_id: 108 http://farmaciatei.ro         |   0.29s | 200
+Worker id:   9 Job_id: 112 https://superbet.ro           |   0.03s | Get "https://superbet.ro": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not superbet.ro
+Worker id:   5 Job_id: 104 http://olx.ro                 |   0.52s | 200
+Worker id:   6 Job_id: 110 http://digi24.ro              |   0.25s | 200
+Worker id:   5 Job_id: 114 https://wildberries.ru        |   0.11s | 200
+Worker id:   7 Job_id:  63 https://samsung.com           |   2.32s | 404
+Worker id:   3 Job_id: 109 https://kommersant.ru         |   0.43s | 200
+Worker id:   5 Job_id: 116 http://emag.ro                |   0.14s | 511
+Worker id:   7 Job_id: 117 https://ria.ru                |   0.15s | 403
+Worker id:   5 Job_id: 119 http://antena3.ro             |   0.12s | 200
+Worker id:   3 Job_id: 118 https://smi2.ru               |   0.23s | 200
+Worker id:   7 Job_id: 120 https://twitter.com           |   0.20s | 200
+Worker id:   6 Job_id: 115 http://drom.ru                |   0.72s | 200
+Worker id:   6 Job_id: 124 https://weather.com           |   0.11s | 200
+Worker id:   8 Job_id:  99 http://tiktok.com             |   1.66s | 200
+Worker id:   7 Job_id: 123 http://pinterest.com          |   0.36s | 200
+Worker id:   6 Job_id: 125 http://linux.org              |   0.10s | 403
+Worker id:   8 Job_id: 126 http://sberbank.ru            |   0.13s | 200
+Worker id:   7 Job_id: 127 http://mk.ru                  |   0.46s | 404
+Worker id:   8 Job_id: 129 http://whatsapp.com           |   0.48s | 200
+Worker id:   6 Job_id: 128 http://vk.com                 |   0.63s | 200
+Worker id:   7 Job_id: 130 https://prosport.ro           |   0.34s | 200
+Worker id:   6 Job_id: 132 https://drom.ru               |   0.58s | 200
+Worker id:   7 Job_id: 133 http://netflix.com            |   0.69s | 200
+Worker id:   7 Job_id: 135 https://gdz.ru                |   0.02s | 403
+Worker id:   6 Job_id: 134 https://news.mail.ru          |   0.32s | 200
+Worker id:   6 Job_id: 137 https://mk.ru                 |   0.30s | 404
+Worker id:   6 Job_id: 138 http://ok.ru                  |   0.16s | 200
+Worker id:   6 Job_id: 139 https://kommersant.ru         |   0.29s | 200
+Worker id:   9 Job_id: 113 http://gosuslugi.ru           |   3.45s | Get "http://gosuslugi.ru": read tcp 192.168.0.23:39588->213.59.254.7:80: read: connection reset by peer
+Worker id:   6 Job_id: 140 http://ya.ru                  |   0.31s | 200
+Worker id:   9 Job_id: 141 https://whatsapp.com          |   0.37s | 200
+Worker id:   6 Job_id: 142 https://olx.ro                |   0.63s | 200
+Worker id:   9 Job_id: 143 http://whatsapp.com           |   0.36s | 200
+Worker id:   9 Job_id: 145 http://t.me                   |   0.26s | 200
+Worker id:   6 Job_id: 144 https://flashscore.ro         |   0.31s | 200
+Worker id:   6 Job_id: 147 http://gismeteo.ru            |   0.09s | Get "http://gismeteo.ru": EOF
+Worker id:   9 Job_id: 146 http://libertatea.ro          |   0.12s | 200
+Worker id:   6 Job_id: 148 https://gdz.ru                |   0.02s | 403
+Worker id:   9 Job_id: 149 http://linux.org              |   0.08s | 403
+Worker id:   6 Job_id: 150 http://emag.ro                |   0.14s | 511
+Worker id:   9 Job_id: 151 https://sport.ro              |   0.24s | 200
+Worker id:   9 Job_id: 153 http://dns-shop.ru            |   0.25s | 200
+Worker id:   6 Job_id: 152 http://music.yandex.ru        |   0.53s | 200
+Worker id:   9 Job_id: 154 https://emag.ro               |   0.30s | 511
+Worker id:   6 Job_id: 155 https://sport.ro              |   0.23s | 200
+Worker id:   2 Job_id:  15 http://wikipedia.org          |  10.00s | Get "http://wikipedia.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   9 Job_id: 156 https://antena3.ro            |   0.11s | 200
+Worker id:   9 Job_id: 159 http://ok.ru                  |   0.12s | 200
+Worker id:   2 Job_id: 158 https://publi24.ro            |   0.37s | 200
+Worker id:   2 Job_id: 161 http://ziare.com              |   0.54s | 200
+Worker id:   2 Job_id: 162 http://prosport.ro            |   0.17s | 200
+Worker id:   2 Job_id: 163 https://drive2.ru             |   0.08s | 403
+Worker id:   2 Job_id: 164 http://orange.ro              |   0.13s | 200
+Worker id:   2 Job_id: 165 https://drom.ru               |   0.46s | 200
+Worker id:   2 Job_id: 166 https://unibet.com            |   0.04s | Get "https://unibet.com": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not unibet.com
+Worker id:   2 Job_id: 167 http://romaniatv.net          |   0.48s | 200
+Worker id:   2 Job_id: 168 http://prosport.ro            |   0.19s | 200
+Worker id:   2 Job_id: 169 https://topwar.ru             |   0.19s | 403
+Worker id:   2 Job_id: 170 http://yandex.ru              |   0.18s | 200
+Worker id:  10 Job_id:  90 http://altex.ro               |  10.00s | Get "http://altex.ro": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:  10 Job_id: 172 http://gismeteo.ru            |   0.09s | Get "http://gismeteo.ru": EOF
+Worker id:   2 Job_id: 171 http://kp.ru                  |   0.93s | Get "https://www.kp.ru/": stopped after 10 redirects
+Worker id:   2 Job_id: 174 https://dexonline.ro          |   0.03s | 200
+Worker id:   1 Job_id: 101 http://turbopages.org         |  10.00s | Get "http://turbopages.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:  10 Job_id: 173 https://music.yandex.ru       |   0.46s | 200
+Worker id:  10 Job_id: 177 http://superbet.ro            |   0.04s | Get "https://superbet.ro/": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not superbet.ro
+Worker id:   1 Job_id: 176 https://mk.ru                 |   0.09s | 404
+Worker id:   2 Job_id: 175 http://yandex.ru              |   0.27s | 200
+Worker id:  10 Job_id: 178 https://gsp.ro                |   0.16s | 200
+Worker id:  10 Job_id: 181 http://dexonline.ro           |   0.07s | 200
+Worker id:   4 Job_id: 111 https://evz.ro                |  10.00s | Get "https://evz.ro": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:  10 Job_id: 182 http://vk.com                 |   0.39s | 200
+Worker id:   5 Job_id: 121 http://turbopages.org         |  10.00s | Get "http://turbopages.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   1 Job_id: 179 http://hh.ru                  |   0.92s | 200
+Worker id:   3 Job_id: 122 https://gismeteo.ru           |  10.00s | Get "https://gismeteo.ru": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   5 Job_id: 185 http://mk.ru                  |   0.10s | 404
+Worker id:   4 Job_id: 183 https://olx.ro                |   0.60s | 200
+Worker id:  10 Job_id: 184 https://impact.ro             |   0.53s | 200
+Worker id:   4 Job_id: 189 https://fandom.com            |   0.18s | 200
+Worker id:  10 Job_id: 190 https://google.ru             |   0.19s | 200
+Worker id:   4 Job_id: 191 https://vodafone.com          |   0.11s | 200
+Worker id:   3 Job_id: 187 https://yandex.ru             |   0.41s | 200
+Worker id:   5 Job_id: 188 http://aliexpress.ru          |   0.39s | 429
+Worker id:   4 Job_id: 193 http://ok.ru                  |   0.14s | 200
+Worker id:   5 Job_id: 195 https://impact.ro             |   0.13s | 200
+Worker id:   1 Job_id: 186 http://drom.ru                |   0.65s | 200
+Worker id:   3 Job_id: 194 https://kommersant.ru         |   0.26s | 200
+Worker id:   4 Job_id: 196 https://ya.ru                 |   0.19s | 200
+Worker id:  10 Job_id: 192 http://lenta.ru               |   0.38s | 200
+Worker id:   3 Job_id: 199 https://google.ro             |   0.17s | 200
+Worker id:   1 Job_id: 198 https://twitch.tv             |   0.29s | 200
+Worker id:   8 Job_id: 131 http://altex.ro               |  10.00s | Get "http://altex.ro": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   5 Job_id: 197 http://stiripesurse.ro        |   0.53s | 200
+Worker id:   7 Job_id: 136 https://gismeteo.ru           |  10.00s | Get "https://gismeteo.ru": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   6 Job_id: 157 http://turbopages.org         |  10.00s | Get "http://turbopages.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   9 Job_id: 160 http://wikipedia.org          |  10.00s | Get "http://wikipedia.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Worker id:   2 Job_id: 180 http://altex.ro               |  10.00s | Get "http://altex.ro": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+=== TOTALS ===
+Jobs Done 200
+WORKERS: JOBS
+Worker_1: 16
+Worker_3: 16
+Worker_8: 12
+Worker_7: 17
+Worker_10: 24
+Worker_2: 17
+Worker_9: 27
+Worker_4: 17
+Worker_6: 30
+Worker_5: 24
+RESPONSES: STATUSES
+  2: Get "http://wikipedia.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+  1: Get "https://unibet.com": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not unibet.com
+  1: Get "https://evz.ro": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+  2: Get "http://gismeteo.ru": EOF
+  1: Get "http://www.kp.ru/": stopped after 10 redirects
+  3: Get "http://altex.ro": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+  2: Get "https://superbet.ro": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not superbet.ro
+  1: Get "https://sberbank.ru": x509: certificate signed by unknown authority
+  4: 511
+  2: Get "https://gismeteo.ru": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+ 15: 403
+  4: Get "https://www.kp.ru/": stopped after 10 redirects
+  2: Get "https://superbet.ro/": x509: certificate is valid for *.orange.md, orange.md, www.orange.md, not superbet.ro
+  4: 429
+  5: 404
+  1: Get "http://gosuslugi.ru": read tcp 192.168.0.23:39588->213.59.254.7:80: read: connection reset by peer
+  3: Get "http://turbopages.org": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+147: 200
+TOTAL TIME log file: 24.61
