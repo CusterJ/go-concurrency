@@ -91,37 +91,32 @@ func (w worker) Start3(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc cha
 	w.id = id
 	log.Printf("Worker %d started", w.id)
 
-	for {
-		j, ok := <-jobChannel
-		if ok {
-			start := time.Now()
+	for j := range jobChannel {
+		start := time.Now()
 
-			var result string
+		var result string
 
-			client := http.Client{
-				Timeout: time.Second * 10,
-			}
-			res, err := client.Get(j.Site)
-			if err != nil {
-				result = err.Error()
-			} else {
-				result = strconv.Itoa(res.StatusCode)
-			}
-
-			t := time.Since(start)
-			s := fmt.Sprintf("worker id: %3d job_id: %3d %-30s| %6.2fs | %s", w.id, j.ID, j.Site, t.Seconds(), result)
-			log.Println(s)
-
-			rc <- JobResult{
-				WorkerID: w.id,
-				JobID:    j.ID,
-				Site:     j.Site,
-				Time:     t.Seconds(),
-				Response: result,
-			}
+		client := http.Client{
+			Timeout: time.Second * 10,
+		}
+		res, err := client.Get(j.Site)
+		if err != nil {
+			result = err.Error()
 		} else {
-			log.Println("Stop worker: ", w.id)
-			return
+			result = strconv.Itoa(res.StatusCode)
+		}
+
+		t := time.Since(start)
+		s := fmt.Sprintf("worker id: %3d job_id: %3d %-30s| %6.2fs | %s", w.id, j.ID, j.Site, t.Seconds(), result)
+		log.Println(s)
+
+		rc <- JobResult{
+			WorkerID: w.id,
+			JobID:    j.ID,
+			Site:     j.Site,
+			Time:     t.Seconds(),
+			Response: result,
 		}
 	}
+	log.Println("Stop worker: ", w.id)
 }

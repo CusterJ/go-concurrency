@@ -4,11 +4,10 @@ import "sync"
 
 type disp struct {
 	worker
-	NumberOfWorkers int
-	wg              *sync.WaitGroup
-	jobChannel      chan Job
-	ResultChannel   chan JobResult
-	urls            []string
+	wg            *sync.WaitGroup
+	jobChannel    chan Job
+	ResultChannel chan JobResult
+	urls          []string
 }
 
 type Job struct {
@@ -24,22 +23,21 @@ type JobResult struct {
 	Response string
 }
 
-func NewDisp(w int, wg *sync.WaitGroup, urls []string) *disp {
+func NewDisp(urls []string) *disp {
 	return &disp{
-		NumberOfWorkers: w,
-		wg:              wg,
-		worker:          worker{},
-		urls:            urls,
-		jobChannel:      make(chan Job),
-		ResultChannel:   make(chan JobResult),
+		urls:          urls,
+		ResultChannel: make(chan JobResult),
 	}
 }
 
-func (d disp) Start() {
-	for i := 1; i <= d.NumberOfWorkers; i++ {
+func (d *disp) Start(workers int) {
+	d.wg = &sync.WaitGroup{}
+	d.jobChannel = make(chan Job)
+
+	for i := 1; i <= workers; i++ {
 		go d.worker.Start3(i, d.wg, d.jobChannel, d.ResultChannel)
 	}
-	d.wg.Add(d.NumberOfWorkers)
+	d.wg.Add(workers)
 
 	for i, v := range d.urls {
 		d.jobChannel <- Job{

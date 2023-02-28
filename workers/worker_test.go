@@ -25,20 +25,21 @@ func BenchmarkWorkers(b *testing.B) {
 		domains = append(domains, scanner.Text())
 	}
 
+	numberOfWorkers := 3
+
 	d := &disp{
-		worker:          worker{},
-		NumberOfWorkers: 3,
-		wg:              &sync.WaitGroup{},
-		urls:            domains,
+		worker: worker{},
+		wg:     &sync.WaitGroup{},
+		urls:   domains,
 	}
 
 	b.Run("WorkerType1", func(b *testing.B) {
 		for i := 0; i < b.N; i++ {
-			d.wg.Add(d.NumberOfWorkers)
+			d.wg.Add(numberOfWorkers)
 			d.jobChannel = make(chan Job, len(d.urls))
 			strCh := make(chan string, len(d.urls))
 
-			for i := 1; i <= d.NumberOfWorkers; i++ {
+			for i := 1; i <= numberOfWorkers; i++ {
 				go d.worker.Start(i, d.wg, d.jobChannel, strCh)
 			}
 
@@ -50,17 +51,16 @@ func BenchmarkWorkers(b *testing.B) {
 			}
 			close(d.jobChannel)
 			d.wg.Wait()
-			// close(d.ResultChannel)
 		}
 	})
 
 	b.Run("WorkerType2", func(b *testing.B) {
 		for i := 0; i < b.N; i++ {
-			d.wg.Add(d.NumberOfWorkers)
+			d.wg.Add(numberOfWorkers)
 			d.jobChannel = make(chan Job, len(d.urls))
 			strCh := make(chan string, len(d.urls))
 
-			for i := 1; i <= d.NumberOfWorkers; i++ {
+			for i := 1; i <= numberOfWorkers; i++ {
 				go d.worker.Start2(i, d.wg, d.jobChannel, strCh)
 			}
 
@@ -72,17 +72,16 @@ func BenchmarkWorkers(b *testing.B) {
 			}
 			close(d.jobChannel)
 			d.wg.Wait()
-			// close(d.ResultChannel)
 		}
 	})
 
 	b.Run("WorkerType3", func(b *testing.B) {
 		for i := 0; i < b.N; i++ {
-			d.wg.Add(d.NumberOfWorkers)
+			d.wg.Add(numberOfWorkers)
 			d.jobChannel = make(chan Job, len(d.urls))
 			d.ResultChannel = make(chan JobResult, len(d.urls))
 
-			for i := 1; i <= d.NumberOfWorkers; i++ {
+			for i := 1; i <= numberOfWorkers; i++ {
 				go d.worker.Start3(i, d.wg, d.jobChannel, d.ResultChannel)
 			}
 
@@ -94,7 +93,6 @@ func BenchmarkWorkers(b *testing.B) {
 			}
 			close(d.jobChannel)
 			d.wg.Wait()
-			// close(d.ResultChannel)
 		}
 	})
 }

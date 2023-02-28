@@ -5,26 +5,19 @@ import (
 	"concurrency/logger"
 	"concurrency/workers"
 	"log"
-	"sync"
 )
 
 func main() {
-	lks := links.GenerateLinks(200)
+	lks := links.GenerateLinks(20)
 	log.Println(lks)
 
-	wg := &sync.WaitGroup{}
-	disp := workers.NewDisp(10, wg, lks)
+	disp := workers.NewDisp(lks)
 
 	lg := logger.NewLog(disp.ResultChannel)
-	lg.CreateLogFIle()
 
-	done := make(chan bool)
+	lg.LogStart()
 
-	lg.LogStart(done)
-	disp.Start()
-
-	wg.Wait()
-	<-done
-
-	lg.CloseLogFIle()
+	disp.Start(10)
+	<-lg.DoneCh
+	log.Println("main func")
 }
