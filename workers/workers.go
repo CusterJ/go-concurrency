@@ -89,15 +89,15 @@ func (w worker) Start3(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc cha
 	defer wg.Done()
 	w.id = id
 	// log.Printf("Worker %d started", w.id)
+	client := http.Client{
+		Timeout: time.Second * 10,
+	}
 
 	for j := range jobChannel {
 		start := time.Now()
 
 		var result string
 
-		client := http.Client{
-			Timeout: time.Second * 10,
-		}
 		res, err := client.Get(j.Site)
 		if err != nil {
 			result = err.Error()
