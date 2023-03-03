@@ -2,6 +2,7 @@ package workers
 
 import (
 	"bufio"
+	"concurrency/workers/clear_worker"
 	"log"
 	"os"
 	"sync"
@@ -22,7 +23,7 @@ func BenchmarkWorkers(b *testing.B) {
 	scanner := bufio.NewScanner(file)
 
 	for scanner.Scan() {
-		domains = append(domains, scanner.Text())
+		domains = append(domains, "https://"+scanner.Text())
 	}
 
 	numberOfWorkers := 3
@@ -40,13 +41,13 @@ func BenchmarkWorkers(b *testing.B) {
 			strCh := make(chan string, len(d.urls))
 
 			for i := 1; i <= numberOfWorkers; i++ {
-				go d.worker.Start(i, d.wg, d.jobChannel, strCh)
+				d.worker.Start(i, d.wg, d.jobChannel, strCh)
 			}
 
 			for i, v := range d.urls {
 				d.jobChannel <- Job{
 					ID:   i,
-					Site: "http://" + v,
+					Site: v,
 				}
 			}
 			close(d.jobChannel)
@@ -67,7 +68,7 @@ func BenchmarkWorkers(b *testing.B) {
 			for i, v := range d.urls {
 				d.jobChannel <- Job{
 					ID:   i,
-					Site: "https://" + v,
+					Site: v,
 				}
 			}
 			close(d.jobChannel)
@@ -88,11 +89,18 @@ func BenchmarkWorkers(b *testing.B) {
 			for i, v := range d.urls {
 				d.jobChannel <- Job{
 					ID:   i,
-					Site: "https://" + v,
+					Site: v,
 				}
 			}
 			close(d.jobChannel)
 			d.wg.Wait()
+		}
+	})
+
+	b.Run("Clear Worker", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			wrk := clear_worker.NewWorker(domains)
+			wrk.Start(numberOfWorkers)
 		}
 	})
 }

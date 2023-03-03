@@ -3,7 +3,6 @@ package workers
 import (
 	"context"
 	"fmt"
-	"log"
 	"net/http"
 	"strconv"
 	"sync"
@@ -16,7 +15,7 @@ type worker struct {
 
 func (w worker) Start(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc chan<- string) {
 	w.id = id
-	log.Printf("Worker %d started", w.id)
+	// log.Printf("Worker %d started", w.id)
 
 	go func() {
 		defer wg.Done()
@@ -39,10 +38,10 @@ func (w worker) Start(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc chan
 
 				t := time.Since(start)
 				s := fmt.Sprintf("worker id: %3d job_id: %3d %-30s| %6.2fs | %s", w.id, j.ID, j.Site, t.Seconds(), result)
-				log.Println(s)
+				// log.Println(s)
 				rc <- s
 			} else {
-				log.Println("Stop worker: ", w.id)
+				// log.Println("Stop worker: ", w.id)
 				return
 			}
 		}
@@ -52,7 +51,7 @@ func (w worker) Start(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc chan
 func (w worker) Start2(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc chan<- string) {
 	defer wg.Done()
 	w.id = id
-	log.Printf("Worker %d started", w.id)
+	// log.Printf("Worker %d started", w.id)
 
 	for {
 		j, ok := <-jobChannel
@@ -61,11 +60,11 @@ func (w worker) Start2(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc cha
 			res := w.doJob(j.Site)
 			t := time.Since(start)
 			s := fmt.Sprintf("worker id: %3d job_id: %3d %-30s| %6.2fs | %s", w.id, j.ID, j.Site, t.Seconds(), res)
-			log.Println(s)
+			// log.Println(s)
 
 			rc <- s
 		} else {
-			log.Println("Stop worker: ", w.id)
+			// log.Println("Stop worker: ", w.id)
 			return
 		}
 	}
@@ -89,7 +88,7 @@ func (w *worker) doJob(url string) string {
 func (w worker) Start3(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc chan<- JobResult) {
 	defer wg.Done()
 	w.id = id
-	log.Printf("Worker %d started", w.id)
+	// log.Printf("Worker %d started", w.id)
 
 	for j := range jobChannel {
 		start := time.Now()
@@ -107,8 +106,8 @@ func (w worker) Start3(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc cha
 		}
 
 		t := time.Since(start)
-		s := fmt.Sprintf("worker id: %3d job_id: %3d %-30s| %6.2fs | %s", w.id, j.ID, j.Site, t.Seconds(), result)
-		log.Println(s)
+		// s := fmt.Sprintf("worker id: %3d job_id: %3d %-30s| %6.2fs | %s", w.id, j.ID, j.Site, t.Seconds(), result)
+		// log.Println(s)
 
 		rc <- JobResult{
 			WorkerID: w.id,
@@ -118,5 +117,5 @@ func (w worker) Start3(id int, wg *sync.WaitGroup, jobChannel <-chan Job, rc cha
 			Response: result,
 		}
 	}
-	log.Println("Stop worker: ", w.id)
+	// log.Println("Stop worker: ", w.id)
 }

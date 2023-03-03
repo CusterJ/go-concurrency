@@ -12,6 +12,7 @@ func CreateFileWithLinks() {
 
 }
 
+// Generates a random slice of HTTP and HTTPS links of a given length from the domains.txt file
 func GenerateLinks(count int) []string {
 	rand.Seed(time.Now().UnixNano())
 

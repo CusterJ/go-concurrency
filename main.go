@@ -3,21 +3,25 @@ package main
 import (
 	"concurrency/links"
 	"concurrency/logger"
-	"concurrency/workers"
+	worker "concurrency/workers/clear_worker"
 	"log"
 )
 
 func main() {
-	lks := links.GenerateLinks(20)
-	log.Println(lks)
+	links := links.GenerateLinks(100)
 
-	disp := workers.NewDisp(lks)
+	// WORKER WITH DISPATCHER
+	// disp := workers.NewDisp(links)
+	// logger := logger.NewLog(disp.ResultChannel)
+	// disp.Start(10)
 
-	lg := logger.NewLog(disp.ResultChannel)
+	// WORKER WITHOUT DISPATCHER
+	worker := worker.NewWorker(links)
+	logger := logger.NewLogger(worker.ResultChannel)
 
-	lg.LogStart()
+	logger.LogStart()
+	worker.Start(10)
 
-	disp.Start(10)
-	<-lg.DoneCh
-	log.Println("main func")
+	<-logger.DoneCh
+	log.Println("main func end")
 }
