@@ -1,5 +1,5 @@
 # go-concurrency
-This project implements concurrency in Golang through a dispatcher, workers, logger, and benchmark.
+This project implements concurrency in GO through a dispatcher, workers, logger, and benchmark.
 
 There are two types of implemented workers:
 
