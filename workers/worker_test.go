@@ -10,6 +10,7 @@ import (
 )
 
 func BenchmarkWorkers(b *testing.B) {
+	// testing.M
 	var domains []string
 
 	file, err := os.Open("domains_test.txt")
